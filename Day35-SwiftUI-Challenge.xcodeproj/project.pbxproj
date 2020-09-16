@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		370EAF9E25100A9800C38952 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370EAF9D25100A9800C38952 /* Question.swift */; };
+		370EAFA02510108600C38952 /* QuestionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370EAF9F2510108600C38952 /* QuestionManager.swift */; };
 		375B98D12508528D006AE1D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375B98D02508528D006AE1D7 /* AppDelegate.swift */; };
 		375B98D32508528D006AE1D7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375B98D22508528D006AE1D7 /* SceneDelegate.swift */; };
 		375B98D52508528D006AE1D7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375B98D42508528D006AE1D7 /* ContentView.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		370EAF9D25100A9800C38952 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		370EAF9F2510108600C38952 /* QuestionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionManager.swift; sourceTree = "<group>"; };
 		375B98CD2508528D006AE1D7 /* Day35-SwiftUI-Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Day35-SwiftUI-Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		375B98D02508528D006AE1D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		375B98D22508528D006AE1D7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +45,7 @@
 			isa = PBXGroup;
 			children = (
 				370EAF9D25100A9800C38952 /* Question.swift */,
+				370EAF9F2510108600C38952 /* QuestionManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 				375B98D12508528D006AE1D7 /* AppDelegate.swift in Sources */,
 				370EAF9E25100A9800C38952 /* Question.swift in Sources */,
 				375B98D32508528D006AE1D7 /* SceneDelegate.swift in Sources */,
+				370EAFA02510108600C38952 /* QuestionManager.swift in Sources */,
 				375B98D52508528D006AE1D7 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

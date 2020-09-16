@@ -17,5 +17,5 @@ struct Question: Hashable {
         return firstNumber * secondNumber
     }
     var position: Int
-    var wellAnswer = false
+    var wellAnswerd = false
 }
