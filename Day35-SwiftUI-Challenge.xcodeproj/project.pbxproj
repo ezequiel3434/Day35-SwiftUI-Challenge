@@ -25,6 +25,11 @@
 		375B98D72508528F006AE1D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 375B98D62508528F006AE1D7 /* Assets.xcassets */; };
 		375B98DA2508528F006AE1D7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 375B98D92508528F006AE1D7 /* Preview Assets.xcassets */; };
 		375B98DD2508528F006AE1D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 375B98DB2508528F006AE1D7 /* LaunchScreen.storyboard */; };
+		37C79B2C251344CA004D1A85 /* Simulator Screen Shot - iPhone SE (2nd generation) - 2020-09-17 at 04.14.57.png in Resources */ = {isa = PBXBuildFile; fileRef = 37C79B27251344CA004D1A85 /* Simulator Screen Shot - iPhone SE (2nd generation) - 2020-09-17 at 04.14.57.png */; };
+		37C79B2D251344CA004D1A85 /* Simulator Screen Shot - iPhone SE (2nd generation) - 2020-09-17 at 04.14.42.png in Resources */ = {isa = PBXBuildFile; fileRef = 37C79B28251344CA004D1A85 /* Simulator Screen Shot - iPhone SE (2nd generation) - 2020-09-17 at 04.14.42.png */; };
+		37C79B2E251344CA004D1A85 /* Simulator Screen Shot - iPhone SE (2nd generation) - 2020-09-17 at 04.14.05.png in Resources */ = {isa = PBXBuildFile; fileRef = 37C79B29251344CA004D1A85 /* Simulator Screen Shot - iPhone SE (2nd generation) - 2020-09-17 at 04.14.05.png */; };
+		37C79B2F251344CA004D1A85 /* Simulator Screen Shot - iPhone SE (2nd generation) - 2020-09-17 at 04.13.42.png in Resources */ = {isa = PBXBuildFile; fileRef = 37C79B2A251344CA004D1A85 /* Simulator Screen Shot - iPhone SE (2nd generation) - 2020-09-17 at 04.13.42.png */; };
+		37C79B30251344CA004D1A85 /* Simulator Screen Shot - iPhone SE (2nd generation) - 2020-09-17 at 04.13.50.png in Resources */ = {isa = PBXBuildFile; fileRef = 37C79B2B251344CA004D1A85 /* Simulator Screen Shot - iPhone SE (2nd generation) - 2020-09-17 at 04.13.50.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,7 +45,7 @@
 		370EAFB12512860D00C38952 /* vm_toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vm_toast.swift; sourceTree = "<group>"; };
 		370EAFB3251286F800C38952 /* vm_padding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vm_padding.swift; sourceTree = "<group>"; };
 		370EAFB5251287B000C38952 /* vm_border_r.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vm_border_r.swift; sourceTree = "<group>"; };
-		375B98CD2508528D006AE1D7 /* Day35-SwiftUI-Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Day35-SwiftUI-Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		375B98CD2508528D006AE1D7 /* Multiplications.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Multiplications.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		375B98D02508528D006AE1D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		375B98D22508528D006AE1D7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		375B98D42508528D006AE1D7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,6 +53,11 @@
 		375B98D92508528F006AE1D7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		375B98DC2508528F006AE1D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		375B98DE2508528F006AE1D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37C79B27251344CA004D1A85 /* Simulator Screen Shot - iPhone SE (2nd generation) - 2020-09-17 at 04.14.57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone SE (2nd generation) - 2020-09-17 at 04.14.57.png"; sourceTree = "<group>"; };
+		37C79B28251344CA004D1A85 /* Simulator Screen Shot - iPhone SE (2nd generation) - 2020-09-17 at 04.14.42.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone SE (2nd generation) - 2020-09-17 at 04.14.42.png"; sourceTree = "<group>"; };
+		37C79B29251344CA004D1A85 /* Simulator Screen Shot - iPhone SE (2nd generation) - 2020-09-17 at 04.14.05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone SE (2nd generation) - 2020-09-17 at 04.14.05.png"; sourceTree = "<group>"; };
+		37C79B2A251344CA004D1A85 /* Simulator Screen Shot - iPhone SE (2nd generation) - 2020-09-17 at 04.13.42.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone SE (2nd generation) - 2020-09-17 at 04.13.42.png"; sourceTree = "<group>"; };
+		37C79B2B251344CA004D1A85 /* Simulator Screen Shot - iPhone SE (2nd generation) - 2020-09-17 at 04.13.50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone SE (2nd generation) - 2020-09-17 at 04.13.50.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,13 +119,14 @@
 			children = (
 				375B98CF2508528D006AE1D7 /* Day35-SwiftUI-Challenge */,
 				375B98CE2508528D006AE1D7 /* Products */,
+				37C79B26251344CA004D1A85 /* images */,
 			);
 			sourceTree = "<group>";
 		};
 		375B98CE2508528D006AE1D7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				375B98CD2508528D006AE1D7 /* Day35-SwiftUI-Challenge.app */,
+				375B98CD2508528D006AE1D7 /* Multiplications.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,6 +154,18 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		37C79B26251344CA004D1A85 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				37C79B27251344CA004D1A85 /* Simulator Screen Shot - iPhone SE (2nd generation) - 2020-09-17 at 04.14.57.png */,
+				37C79B28251344CA004D1A85 /* Simulator Screen Shot - iPhone SE (2nd generation) - 2020-09-17 at 04.14.42.png */,
+				37C79B29251344CA004D1A85 /* Simulator Screen Shot - iPhone SE (2nd generation) - 2020-09-17 at 04.14.05.png */,
+				37C79B2A251344CA004D1A85 /* Simulator Screen Shot - iPhone SE (2nd generation) - 2020-09-17 at 04.13.42.png */,
+				37C79B2B251344CA004D1A85 /* Simulator Screen Shot - iPhone SE (2nd generation) - 2020-09-17 at 04.13.50.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -160,7 +183,7 @@
 			);
 			name = "Day35-SwiftUI-Challenge";
 			productName = "Day35-SwiftUI-Challenge";
-			productReference = 375B98CD2508528D006AE1D7 /* Day35-SwiftUI-Challenge.app */;
+			productReference = 375B98CD2508528D006AE1D7 /* Multiplications.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -201,9 +224,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37C79B2E251344CA004D1A85 /* Simulator Screen Shot - iPhone SE (2nd generation) - 2020-09-17 at 04.14.05.png in Resources */,
 				375B98DD2508528F006AE1D7 /* LaunchScreen.storyboard in Resources */,
+				37C79B2D251344CA004D1A85 /* Simulator Screen Shot - iPhone SE (2nd generation) - 2020-09-17 at 04.14.42.png in Resources */,
+				37C79B30251344CA004D1A85 /* Simulator Screen Shot - iPhone SE (2nd generation) - 2020-09-17 at 04.13.50.png in Resources */,
 				375B98DA2508528F006AE1D7 /* Preview Assets.xcassets in Resources */,
 				375B98D72508528F006AE1D7 /* Assets.xcassets in Resources */,
+				37C79B2C251344CA004D1A85 /* Simulator Screen Shot - iPhone SE (2nd generation) - 2020-09-17 at 04.14.57.png in Resources */,
+				37C79B2F251344CA004D1A85 /* Simulator Screen Shot - iPhone SE (2nd generation) - 2020-09-17 at 04.13.42.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,7 +402,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.paradabeltran.Day35-SwiftUI-Challenge";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Multiplications;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -394,7 +422,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.paradabeltran.Day35-SwiftUI-Challenge";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Multiplications;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
