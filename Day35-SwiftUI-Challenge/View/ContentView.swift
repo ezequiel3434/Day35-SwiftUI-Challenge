@@ -62,15 +62,15 @@ struct ContentView: View {
                         HStack{
                             Image("giraffe")
                                 .resizable()
-                                .frame(width:60, height: 60)
+                                .frame(width:30, height: 30)
                             Image(systemName: "gear")
                                 .resizable()
-                                .frame(width:30, height: 30)
+                                .frame(width:20, height: 20)
                                 .foregroundColor(Color(.white))
                                 .offset(x: CGFloat(-10), y: CGFloat(0))
                             
                         }
-                        .frame(width:200, height: 95)
+                        .frame(width:100, height: 40)
                         .background(Color("vert"))
                         .cornerRadius(15)
                         .overlay(
@@ -97,7 +97,7 @@ struct ContentView: View {
                         )
                         Text("!")
                     }
-                    .padding(.top, 10)
+                    .padding(.top, 0)
                     .font(.title)
                     HStack(alignment: .bottom, spacing: 0){
                         HStack{
@@ -128,7 +128,7 @@ struct ContentView: View {
                             Spacer()
                             Text("How much is : ")
                                 .fontWeight(.bold)
-                                .modifier(vm_padding(top: 10, trailing: 30, bottom: 10, leading: 30))
+                                .modifier(vm_padding(top: 10, trailing: 30, bottom: 0, leading: 30))
                                 .foregroundColor(Color("color1"))
                             Spacer()
                         }
@@ -141,14 +141,14 @@ struct ContentView: View {
                                 .rotation3DEffect(Angle.degrees(rotateValue), axis: (x: 0, y: 1, z: 0))
                             RandomAnimal(number: actualQuestion.secondNumber)
                         }
-                        .padding(.top, 10)
-                        .padding(.bottom, 20)
+                            
+                        .padding(.bottom, 5)
                     }
                         
                     .background(
                         Color(red: 243/255, green: 186/255, blue: 109/255, opacity: 0.7)
                     )
-                    .overlay(
+                        .overlay(
                             Rectangle()
                                 .stroke(Color.clear)
                                 .shadow(radius: 1)
@@ -161,33 +161,33 @@ struct ContentView: View {
                             // Display
                             HStack{
                                 Text(answer)
-                                    .frame(width: 150, height: 70, alignment: .center)
+                                    .frame(width: 170, height: 50, alignment: .center)
                                     .font(.title)
-                                .foregroundColor(Color("color1"))
+                                    .foregroundColor(Color("color1"))
                                     .background(Color(.white))
-                                .cornerRadius(8)
+                                    .cornerRadius(8)
                                 if displayValidButton {
                                     Image("roundWood")
-                                    .resizable()
+                                        .resizable()
                                         .frame(width:60, height: 60)
-                                    .overlay(
-                                        Button(action:{
-                                            //Valid answer
-                                            self.userValidANswer()
-                                        }){
-                                            Image(systemName: "arrow.up.circle.fill").resizable()
-                                                .frame(width:40, height: 40)
-                                            .foregroundColor(Color("color2"))
-                                        }
-                                        .frame(width:50, height: 50)
+                                        .overlay(
+                                            Button(action:{
+                                                //Valid answer
+                                                self.userValidANswer()
+                                            }){
+                                                Image(systemName: "arrow.up.circle.fill").resizable()
+                                                    .frame(width:40, height: 40)
+                                                    .foregroundColor(Color("color2"))
+                                            }
+                                            .frame(width:50, height: 50)
                                     )
-                                
+                                    
                                 }else {
                                     Color.clear
                                         .frame(width:60, height: 60)
                                 }
                             }
-                            
+                                
                             .frame(height:50)
                             .frame(minHeight:50,
                                    idealHeight: 50,
@@ -253,25 +253,25 @@ struct ContentView: View {
                             // Line 0 + clear
                             HStack {
                                 Image("roundWood")
-                                .resizable()
-                                .modifier(vm_pad())
-                                .overlay(
-                                    Button(action:{
-                                        self.resetInput()
-                                    }){
-                                        Image(systemName: "delete.left.fill")
-                                            .foregroundColor(.white)
-                                    }
+                                    .resizable()
+                                    .modifier(vm_pad())
+                                    .overlay(
+                                        Button(action:{
+                                            self.resetInput()
+                                        }){
+                                            Image(systemName: "delete.left.fill")
+                                                .foregroundColor(.white)
+                                        }
                                 )
                                 Image("woodPad")
-                                .resizable()
-                                .modifier(vm_pad())
-                                .overlay(
-                                    Button(action:{
-                                        self.padTapped("0")
-                                    }){
-                                        PadContent(number: "0")
-                                    }
+                                    .resizable()
+                                    .modifier(vm_pad())
+                                    .overlay(
+                                        Button(action:{
+                                            self.padTapped("0")
+                                        }){
+                                            PadContent(number: "0")
+                                        }
                                 )
                                 Text("")
                                     .frame(width:70, height: 50)
@@ -292,11 +292,11 @@ struct ContentView: View {
                     if goodAnswerToast {
                         HStack{
                             Image(systemName: "checkmark.circle.fill")
-                            .foregroundColor(Color("vert"))
+                                .foregroundColor(Color("vert"))
                             Text("Good Answer !")
                                 .foregroundColor(.white)
                         }
-                    .modifier(vm_toast())
+                        .modifier(vm_toast())
                     }
                     if badAnswerToast {
                         HStack{
@@ -304,9 +304,9 @@ struct ContentView: View {
                                 .foregroundColor(.red)
                             Text("\(actualQuestion.goodAnswer)")
                                 .foregroundColor(.white)
-                            .bold()
+                                .bold()
                         }
-                    .modifier(vm_toast())
+                        .modifier(vm_toast())
                     } else {
                         HStack{
                             Text(".")
@@ -315,19 +315,19 @@ struct ContentView: View {
                     }
                 }
                 .frame(height: 40)
-                .padding(.bottom, 40)
+                .padding(.bottom, 10)
                 
                 
             }// VStack Main
-            
-            .foregroundColor(Color("color2"))
-            .background(Image("forestBg")
-                .resizable()
-                .scaledToFill()
+                
+                .foregroundColor(Color("color2"))
+                .background(Image("forestBg")
+                    .resizable()
+                    .scaledToFill()
             )
-            
+                
                 .alert(isPresented: $showingError){
-                    Alert(title: Text("empty answer..."), message: Text("Try to answer before validating"), dismissButton: .default("OK"))
+                    Alert(title: Text("empty answer..."), message: Text("Try to answer before validating"), dismissButton: .default(Text("OK")))
             }
             
             
@@ -335,185 +335,185 @@ struct ContentView: View {
             
             
             
-            //            // PARAM BLOCK
-            //            if paramVisible {
-            //                VStack {
-            //                    Br(size: 150)
-            //                    // Form block
-            //                    VStack {
-            //                        Text("Configuration")
-            //                            .font(.largeTitle)
-            //                            .foregroundColor(Color("color1"))
-            //                            .padding(.top, 40)
-            //                        // Phrase choose your table
-            //                        HStack(alignment: .bottom, spacing: 0){
-            //                            Text("Choose the multiplication ")
-            //                            Text("table")
-            //                                .fontWeight(.bold)
-            //                                .foregroundColor(Color("color1"))
-            //                        }
-            //                        .padding(.top, 20)
-            //                        .foregroundColor(Color("configText"))
-            //
-            //                        HStack(spacing: 8){
-            //                            ForEach(1..<11){ number in
-            //                                Rectangle()
-            //                                    .frame(width:30, height: 30, alignment: .center)
-            //                                    .foregroundColor(number == self.tableSel ? Color("color1") : Color("vert"))
-            //                                    .animation(.default)
-            //                                    .cornerRadius(8)
-            //                                    .overlay(
-            //                                        Button(action: {
-            //                                            self.tableSel = number
-            //                                        }){
-            //                                            Text("\(number)")
-            //                                                .foregroundColor(.white)
-            //                                                .bold()
-            //                                        }
-            //                                )
-            //
-            //                            }
-            //                        }
-            //                        .padding(.top, 20)
-            //                        .padding(.bottom, 30)
-            //
-            //                        Text("Choose the number of questions:")
-            //                            .foregroundColor(Color("configText"))
-            //                            .padding(.top, 20)
-            //                        Picker("Number of questions:", selection: $nbQuestionSel){
-            //                            ForEach(0 ..< tabNbQuestions.count){
-            //                                number in
-            //                                Text(self.tabNbQuestions[number])
-            //                            }
-            //                        }
-            //                        .pickerStyle(SegmentedPickerStyle())
-            //                        .foregroundColor(Color("color2"))
-            //                        .padding()
-            //
-            //                        HStack(spacing: 18){
-            //                            ForEach(0..<animals.count){ num in
-            //                                self.animals[num]
-            //                                    .offset(self.dragAmount)
-            //                                    .animation(Animation.default.delay(Double(num)/10))
-            //
-            //                            }
-            //                        }
-            //                        .gesture(
-            //                            DragGesture()
-            //                                .onChanged {
-            //                                    self.dragAmount = $0.translation
-            //                            }
-            //                            .onEnded{ _ in
-            //                                self.dragAmount = .zero
-            //                                self.enabled.toggle()
-            //                            }
-            //                        )
-            //                            .padding(.top, 40)
-            //                            .padding(.bottom, 40)
-            //                        // Play Button
-            //                        VStack{
-            //                            Image("jouer")
-            //                                .resizable()
-            //                                .frame(width:200, height: 130)
-            //                                .overlay(
-            //                                    Button(action: {
-            //                                        // launch new Game
-            //                                        self.newGame()
-            //                                        // hide params
-            //                                        self.paramVisible.toggle()
-            //
-            //                                    }){
-            //
-            //                                        Text("PLAY").bold()
-            //                                            .foregroundColor(Color("light"))
-            //                                            .font(.title)
-            //                                            .frame(width: 200, height: 130)
-            //
-            //
-            //                                    }
-            //                            )
-            //
-            //                            // Cancel Button
-            //                            Button(action: {
-            //                                self.cancelTapped()
-            //                            }){
-            //                                Text("Cancel")
-            //                                    .underline()
-            //                            }
-            //                            .foregroundColor(Color("light"))
-            //                            .padding(.top)
-            //
-            //                        } // end form block
-            //                            .padding(.top, 10)
-            //                            .padding(.bottom, 200)
-            //                        Spacer()
-            //                    }// Param block vstack
-            //
-            //
-            //                }
-            //                .background(Image("settingsBg")
-            //                .resizable())
-            //                .animation(.interactiveSpring())
-            //
-            //
-            //            }// If is visible
-            //            // SCORE FINISHED
-            //
-            //            if gameFinished {
-            //                // Game finished main
-            //                VStack{
-            //                    VStack{
-            //                        Br(size: 160)
-            //                        HStack{
-            //                            Spacer()
-            //                            VStack{
-            //                                Text("SCORE !")
-            //                                    .bold()
-            //                                    .font(.largeTitle)
-            //                                HStack(spacing: 0) {
-            //                                    Text("\(questionManager.score)").bold().foregroundColor(Color("vert"))
-            //                                    Text("/")
-            //                                    Text(questionManager.maxQuestionAff)
-            //                                }
-            //                                .font(.largeTitle)
-            //                            }
-            //                            .foregroundColor(.white)
-            //                            .modifier(vm_padding(top: 10, trailing: 30, bottom: 10, leading: 30))
-            //                            .background(Color("color1"))
-            //                            .cornerRadius(8)
-            //                            .modifier(vm_border_r(radius: 8, color: .white, lineWidth: 2))
-            //
-            //                            Spacer()
-            //
-            //                        }
-            //                        Br(size: 80)
-            //
-            //                        // New Game Button
-            //                        Image("jouer")
-            //                            .resizable()
-            //                        frame(width: 200, height: 130)
-            //                        overlay(
-            //                            Button(action: {
-            //                                self.newGame()
-            //                                self.gameFinished.toggle()
-            //                                self.paramVisible = true
-            //                            }){
-            //
-            //                                VStack{
-            //                                    Text("New").bold()
-            //                                    Text("Game").bold()
-            //                                }
-            //                                .foregroundColor(Color("light"))
-            //                                .font(.title)
-            //                                frame(width: 180, height: 130, alignment: .center )
-            //                            }
-            //                        )
-            //                    }
-            //                    Spacer()
-            //                }
-            //                .background(Image("tropicalBackground").resizable())
-            //
-            //            }
+            // PARAM BLOCK
+            if paramVisible {
+                VStack {
+                    Br(size: 150)
+                    // Form block
+                    VStack {
+                        Text("Configuration")
+                            .font(.largeTitle)
+                            .foregroundColor(Color("color1"))
+                            .padding(.top, 40)
+                        // Phrase choose your table
+                        HStack(alignment: .bottom, spacing: 0){
+                            Text("Choose the multiplication ")
+                            Text("table")
+                                .fontWeight(.bold)
+                                .foregroundColor(Color("color1"))
+                        }
+                        .padding(.top, 20)
+                        .foregroundColor(Color("configText"))
+                        
+                        HStack(spacing: 8){
+                            ForEach(1..<11){ number in
+                                Rectangle()
+                                    .frame(width:30, height: 30, alignment: .center)
+                                    .foregroundColor(number == self.tableSel ? Color("color1") : Color("vert"))
+                                    .animation(.default)
+                                    .cornerRadius(8)
+                                    .overlay(
+                                        Button(action: {
+                                            self.tableSel = number
+                                        }){
+                                            Text("\(number)")
+                                                .foregroundColor(.white)
+                                                .bold()
+                                        }
+                                )
+                                
+                            }
+                        }
+                        .padding(.top, 20)
+                        .padding(.bottom, 30)
+                        
+                        Text("Choose the number of questions:")
+                            .foregroundColor(Color("configText"))
+                            .padding(.top, 20)
+                        Picker("Number of questions:", selection: $nbQuestionSel){
+                            ForEach(0 ..< tabNbQuestions.count){
+                                number in
+                                Text(self.tabNbQuestions[number])
+                            }
+                        }
+                        .pickerStyle(SegmentedPickerStyle())
+                        .foregroundColor(Color("color2"))
+                        .padding()
+                        
+                        HStack(spacing: 18){
+                            ForEach(0..<animals.count){ num in
+                                self.animals[num]
+                                    .offset(self.dragAmount)
+                                    .animation(Animation.default.delay(Double(num)/10))
+                                
+                            }
+                        }
+                        .gesture(
+                            DragGesture()
+                                .onChanged {
+                                    self.dragAmount = $0.translation
+                            }
+                            .onEnded{ _ in
+                                self.dragAmount = .zero
+                                self.enabled.toggle()
+                            }
+                        )
+                            .padding(.top, 40)
+                            .padding(.bottom, 40)
+                        // Play Button
+                        VStack{
+                            Image("jouer")
+                                .resizable()
+                                .frame(width:200, height: 130)
+                                .overlay(
+                                    Button(action: {
+                                        // launch new Game
+                                        self.newGame()
+                                        // hide params
+                                        self.paramVisible.toggle()
+                                        
+                                    }){
+                                        
+                                        Text("PLAY").bold()
+                                            .foregroundColor(Color("light"))
+                                            .font(.title)
+                                            .frame(width: 200, height: 130)
+                                        
+                                        
+                                    }
+                            )
+                            
+                            // Cancel Button
+                            Button(action: {
+                                self.cancelTapped()
+                            }){
+                                Text("Cancel")
+                                    .underline()
+                            }
+                            .foregroundColor(Color("light"))
+                            .padding(.top)
+                            
+                        } // end form block
+                            .padding(.top, 10)
+                            .padding(.bottom, 200)
+                        Spacer()
+                    }// Param block vstack
+                    
+                    
+                }
+                .background(Image("settingsBg")
+                .resizable())
+                .animation(.interactiveSpring())
+                
+                
+            }// If is visible
+            // SCORE FINISHED
+            
+            if gameFinished {
+                // Game finished main
+                VStack{
+                    VStack{
+                        Br(size: 160)
+                        HStack{
+                            Spacer()
+                            VStack{
+                                Text("SCORE !")
+                                    .bold()
+                                    .font(.largeTitle)
+                                HStack(spacing: 0) {
+                                    Text("\(questionManager.score)").bold().foregroundColor(Color("vert"))
+                                    Text("/")
+                                    Text(questionManager.maxQuestionAff)
+                                }
+                                .font(.largeTitle)
+                            }
+                            .foregroundColor(.white)
+                            .modifier(vm_padding(top: 10, trailing: 30, bottom: 10, leading: 30))
+                            .background(Color("color1"))
+                            .cornerRadius(8)
+                            .modifier(vm_border_r(radius: 8, color: .white, lineWidth: 2))
+                            
+                            Spacer()
+                            
+                        }
+                        Br(size: 80)
+                        
+                        // New Game Button
+                        Image("jouer")
+                            .resizable()
+                        frame(width: 200, height: 130)
+                        overlay(
+                            Button(action: {
+                                self.newGame()
+                                self.gameFinished.toggle()
+                                self.paramVisible = true
+                            }){
+                                
+                                VStack{
+                                    Text("New").bold()
+                                    Text("Game").bold()
+                                }
+                                .foregroundColor(Color("light"))
+                                .font(.title)
+                                frame(width: 180, height: 130, alignment: .center )
+                            }
+                        )
+                    }
+                    Spacer()
+                }
+                .background(Image("tropicalBackground").resizable())
+                
+            }
         }// ZStack
             .edgesIgnoringSafeArea(.all)
         
