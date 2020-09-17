@@ -25,11 +25,11 @@
 		375B98D72508528F006AE1D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 375B98D62508528F006AE1D7 /* Assets.xcassets */; };
 		375B98DA2508528F006AE1D7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 375B98D92508528F006AE1D7 /* Preview Assets.xcassets */; };
 		375B98DD2508528F006AE1D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 375B98DB2508528F006AE1D7 /* LaunchScreen.storyboard */; };
-		37C79B2C251344CA004D1A85 /* Simulator Screen Shot - iPhone SE (2nd generation) - 2020-09-17 at 04.14.57.png in Resources */ = {isa = PBXBuildFile; fileRef = 37C79B27251344CA004D1A85 /* Simulator Screen Shot - iPhone SE (2nd generation) - 2020-09-17 at 04.14.57.png */; };
-		37C79B2D251344CA004D1A85 /* Simulator Screen Shot - iPhone SE (2nd generation) - 2020-09-17 at 04.14.42.png in Resources */ = {isa = PBXBuildFile; fileRef = 37C79B28251344CA004D1A85 /* Simulator Screen Shot - iPhone SE (2nd generation) - 2020-09-17 at 04.14.42.png */; };
-		37C79B2E251344CA004D1A85 /* Simulator Screen Shot - iPhone SE (2nd generation) - 2020-09-17 at 04.14.05.png in Resources */ = {isa = PBXBuildFile; fileRef = 37C79B29251344CA004D1A85 /* Simulator Screen Shot - iPhone SE (2nd generation) - 2020-09-17 at 04.14.05.png */; };
-		37C79B2F251344CA004D1A85 /* Simulator Screen Shot - iPhone SE (2nd generation) - 2020-09-17 at 04.13.42.png in Resources */ = {isa = PBXBuildFile; fileRef = 37C79B2A251344CA004D1A85 /* Simulator Screen Shot - iPhone SE (2nd generation) - 2020-09-17 at 04.13.42.png */; };
-		37C79B30251344CA004D1A85 /* Simulator Screen Shot - iPhone SE (2nd generation) - 2020-09-17 at 04.13.50.png in Resources */ = {isa = PBXBuildFile; fileRef = 37C79B2B251344CA004D1A85 /* Simulator Screen Shot - iPhone SE (2nd generation) - 2020-09-17 at 04.13.50.png */; };
+		37C79B2C251344CA004D1A85 /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = 37C79B27251344CA004D1A85 /* 5.png */; };
+		37C79B2D251344CA004D1A85 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 37C79B28251344CA004D1A85 /* 4.png */; };
+		37C79B2E251344CA004D1A85 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 37C79B29251344CA004D1A85 /* 3.png */; };
+		37C79B2F251344CA004D1A85 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 37C79B2A251344CA004D1A85 /* 1.png */; };
+		37C79B30251344CA004D1A85 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 37C79B2B251344CA004D1A85 /* 2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,11 +53,11 @@
 		375B98D92508528F006AE1D7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		375B98DC2508528F006AE1D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		375B98DE2508528F006AE1D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		37C79B27251344CA004D1A85 /* Simulator Screen Shot - iPhone SE (2nd generation) - 2020-09-17 at 04.14.57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone SE (2nd generation) - 2020-09-17 at 04.14.57.png"; sourceTree = "<group>"; };
-		37C79B28251344CA004D1A85 /* Simulator Screen Shot - iPhone SE (2nd generation) - 2020-09-17 at 04.14.42.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone SE (2nd generation) - 2020-09-17 at 04.14.42.png"; sourceTree = "<group>"; };
-		37C79B29251344CA004D1A85 /* Simulator Screen Shot - iPhone SE (2nd generation) - 2020-09-17 at 04.14.05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone SE (2nd generation) - 2020-09-17 at 04.14.05.png"; sourceTree = "<group>"; };
-		37C79B2A251344CA004D1A85 /* Simulator Screen Shot - iPhone SE (2nd generation) - 2020-09-17 at 04.13.42.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone SE (2nd generation) - 2020-09-17 at 04.13.42.png"; sourceTree = "<group>"; };
-		37C79B2B251344CA004D1A85 /* Simulator Screen Shot - iPhone SE (2nd generation) - 2020-09-17 at 04.13.50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone SE (2nd generation) - 2020-09-17 at 04.13.50.png"; sourceTree = "<group>"; };
+		37C79B27251344CA004D1A85 /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
+		37C79B28251344CA004D1A85 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		37C79B29251344CA004D1A85 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		37C79B2A251344CA004D1A85 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		37C79B2B251344CA004D1A85 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,11 +157,11 @@
 		37C79B26251344CA004D1A85 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				37C79B27251344CA004D1A85 /* Simulator Screen Shot - iPhone SE (2nd generation) - 2020-09-17 at 04.14.57.png */,
-				37C79B28251344CA004D1A85 /* Simulator Screen Shot - iPhone SE (2nd generation) - 2020-09-17 at 04.14.42.png */,
-				37C79B29251344CA004D1A85 /* Simulator Screen Shot - iPhone SE (2nd generation) - 2020-09-17 at 04.14.05.png */,
-				37C79B2A251344CA004D1A85 /* Simulator Screen Shot - iPhone SE (2nd generation) - 2020-09-17 at 04.13.42.png */,
-				37C79B2B251344CA004D1A85 /* Simulator Screen Shot - iPhone SE (2nd generation) - 2020-09-17 at 04.13.50.png */,
+				37C79B27251344CA004D1A85 /* 5.png */,
+				37C79B28251344CA004D1A85 /* 4.png */,
+				37C79B29251344CA004D1A85 /* 3.png */,
+				37C79B2A251344CA004D1A85 /* 1.png */,
+				37C79B2B251344CA004D1A85 /* 2.png */,
 			);
 			path = images;
 			sourceTree = "<group>";
@@ -224,14 +224,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37C79B2E251344CA004D1A85 /* Simulator Screen Shot - iPhone SE (2nd generation) - 2020-09-17 at 04.14.05.png in Resources */,
+				37C79B2E251344CA004D1A85 /* 3.png in Resources */,
 				375B98DD2508528F006AE1D7 /* LaunchScreen.storyboard in Resources */,
-				37C79B2D251344CA004D1A85 /* Simulator Screen Shot - iPhone SE (2nd generation) - 2020-09-17 at 04.14.42.png in Resources */,
-				37C79B30251344CA004D1A85 /* Simulator Screen Shot - iPhone SE (2nd generation) - 2020-09-17 at 04.13.50.png in Resources */,
+				37C79B2D251344CA004D1A85 /* 4.png in Resources */,
+				37C79B30251344CA004D1A85 /* 2.png in Resources */,
 				375B98DA2508528F006AE1D7 /* Preview Assets.xcassets in Resources */,
 				375B98D72508528F006AE1D7 /* Assets.xcassets in Resources */,
-				37C79B2C251344CA004D1A85 /* Simulator Screen Shot - iPhone SE (2nd generation) - 2020-09-17 at 04.14.57.png in Resources */,
-				37C79B2F251344CA004D1A85 /* Simulator Screen Shot - iPhone SE (2nd generation) - 2020-09-17 at 04.13.42.png in Resources */,
+				37C79B2C251344CA004D1A85 /* 5.png in Resources */,
+				37C79B2F251344CA004D1A85 /* 1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
