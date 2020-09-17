@@ -55,7 +55,7 @@ struct ContentView: View {
             VStack{ // Game main ZSTACK
                 // Game without toast
                 VStack{
-                    Br(size: 70)
+                Br(size: 70)
                     // Settings button
                     HStack(alignment: .center, spacing: 0){
                         Spacer()
@@ -153,6 +153,7 @@ struct ContentView: View {
                                 .stroke(Color.clear)
                                 .shadow(radius: 1)
                     )
+                        
                     
                     // Play block
                     HStack(alignment: .top){
@@ -193,7 +194,7 @@ struct ContentView: View {
                                    idealHeight: 50,
                                    maxHeight: 50)
                                 .padding(.bottom, 10)
-                            
+//                                .padding(.top, 0)
                             
                             // Keyboard
                             //Line 1 2 3
@@ -281,10 +282,12 @@ struct ContentView: View {
                         }// End Display and keyboard
                     }// end response block
                     //Spacer()
+                        
                     Color.yellow
                 }// VStack game without toast
                 // .background(Color.blue)
                 // Spacer to force game to be at the top
+               
                 Spacer()
                 
                 // toast
@@ -328,6 +331,7 @@ struct ContentView: View {
                 
                 .alert(isPresented: $showingError){
                     Alert(title: Text("empty answer..."), message: Text("Try to answer before validating"), dismissButton: .default(Text("OK")))
+                    
             }
             
             
@@ -338,7 +342,7 @@ struct ContentView: View {
             // PARAM BLOCK
             if paramVisible {
                 VStack {
-                    Br(size: 150)
+                    Br(size: 180)
                     // Form block
                     VStack {
                         Text("Configuration")
@@ -394,7 +398,7 @@ struct ContentView: View {
                             ForEach(0..<animals.count){ num in
                                 self.animals[num]
                                     .offset(self.dragAmount)
-                                    .animation(Animation.default.delay(Double(num)/10))
+                                    .animation(Animation.default.delay(Double(num)/9))
                                 
                             }
                         }
@@ -460,6 +464,7 @@ struct ContentView: View {
             // SCORE FINISHED
             
             if gameFinished {
+                
                 // Game finished main
                 VStack{
                     VStack{
@@ -491,8 +496,8 @@ struct ContentView: View {
                         // New Game Button
                         Image("jouer")
                             .resizable()
-                        frame(width: 200, height: 130)
-                        overlay(
+                            .frame(width: 200, height: 130)
+                            .overlay(
                             Button(action: {
                                 self.newGame()
                                 self.gameFinished.toggle()
@@ -505,7 +510,7 @@ struct ContentView: View {
                                 }
                                 .foregroundColor(Color("light"))
                                 .font(.title)
-                                frame(width: 180, height: 130, alignment: .center )
+                                .frame(width: 180, height: 130, alignment: .center )
                             }
                         )
                     }
@@ -563,6 +568,7 @@ struct ContentView: View {
         // Nothing happens if the user has not answered
         if answer == "" {
             showingError.toggle()
+            displayValidButton = true
             return
         }
         

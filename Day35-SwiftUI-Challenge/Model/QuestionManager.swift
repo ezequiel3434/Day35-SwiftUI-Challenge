@@ -13,6 +13,7 @@ struct QuestionManager {
     var table: Int = 3
     
     var maxQuestionAff: String {
+        
         return self.maximunQuestion != "all" ? self.maximunQuestion: "10"
     }
     
@@ -34,7 +35,7 @@ struct QuestionManager {
     // Score
     var score: Int {
         let tabTrueAnswers = self.tabQuestion.filter(\.wellAnswerd)
-        print(tabTrueAnswers)
+        
         return tabTrueAnswers.count
     }
     
