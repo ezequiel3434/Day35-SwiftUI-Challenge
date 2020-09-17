@@ -126,7 +126,7 @@ struct ContentView: View {
                     VStack{
                         HStack{
                             Spacer()
-                            Text("How much is : ")
+                            Text("What is : ")
                                 .fontWeight(.bold)
                                 .modifier(vm_padding(top: 10, trailing: 30, bottom: 0, leading: 30))
                                 .foregroundColor(Color("color1"))
@@ -505,8 +505,8 @@ struct ContentView: View {
                             }){
                                 
                                 VStack{
-                                    Text("New").bold()
-                                    Text("Game").bold()
+                                    Text("Play").bold()
+                                    Text("Again").bold()
                                 }
                                 .foregroundColor(Color("light"))
                                 .font(.title)
@@ -580,7 +580,7 @@ struct ContentView: View {
             badAnswerToast = true
         }
         // We wait 2 sec
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
             // we transfer the message
             if wellAnswerd { self.goodAnswerToast = false } else {
                 self.badAnswerToast = false
